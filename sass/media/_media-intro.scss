@@ -1,0 +1,59 @@
+@media (max-width: 768px){
+    .swiper.introSwiper{
+        .swiper-slide{
+
+            .intro-title{
+                font-weight: 900;
+                font-size: 55px;
+                line-height: 85%;
+                letter-spacing: -8px;
+                text-transform: uppercase;
+            }
+            .intro-cars-img{
+                left: 0;
+                .desktop-img{
+                    display: none;  
+                }
+                .mobile-img{
+                    width: 265px;
+                    height: 218px;
+                }
+            }
+            .intro-info{
+                display: none;
+            }
+            .intro-info.desktop{
+                display: block;
+            }
+            .black-borders-box{
+                width: 55px;
+                height: 190px;
+                padding: 0;
+                padding-top: 16px;
+                gap: 4px;
+                justify-content: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                top: 32px;
+                left: 22px;
+            }
+            .black-border-box{
+                font-size: 16px;
+            }
+            .intro-bg-buildings,
+            .intro-red-circle{
+                display: none;
+            }
+        }
+    }
+    .intro-info.desktop{
+        display: none !important;
+    }
+    .intro-info.mobile{
+        display: block !important;
+        width: 100% !important;
+    }
+}
+.intro-info.mobile{
+    display: none;
+}

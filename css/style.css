@@ -1,0 +1,907 @@
+@charset "UTF-8";
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  font-family: "Plumb";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  overflow: hidden !important;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 900;
+  color: #D60000;
+  font-size: 70px;
+  line-height: 71%;
+  letter-spacing: -7px;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  font-weight: 900;
+  font-style: Black;
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: 8px !important;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: black;
+  max-width: 623px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-more-btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: #D60000;
+  display: flex;
+  gap: 13px;
+}
+
+.sub-title {
+  flex-wrap: wrap;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 26px;
+  border-radius: 90px;
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 0;
+  background-color: #D60000;
+  opacity: 1;
+  border: 5px solid #D60000;
+}
+
+.swiper-pagination {
+  left: -50px !important;
+}
+
+@media (max-width: 480px) {
+  .swiper-pagination {
+    left: 50% !important;
+    bottom: -100px !important;
+    transform: translateX(-50%);
+  }
+}
+.swiper-slide {
+  overflow: hidden;
+}
+
+/* ===== DEFAULT DESKTOP/LAPTOP STYLE ===== */
+/* Bu qism sen bergan oxirgi rasmga mos bo‘lib qoladi */
+.advantages-section {
+  margin-top: 136px;
+  margin-bottom: 46px;
+}
+
+.advantages-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advantages-card {
+  opacity: 1;
+  border-width: 7px;
+  height: 240px !important;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding-left: 34px;
+  padding-top: 20px;
+}
+.advantages-card.red {
+  width: 272px !important;
+  padding-bottom: 490px;
+  position: relative;
+  z-index: 5;
+  border: 7px solid #000000;
+}
+.advantages-card.red .card-map-img {
+  position: absolute;
+  top: 122px;
+  right: -100px;
+  z-index: -1;
+  transform: rotate(13deg);
+}
+.advantages-card.red .buy-car-btn {
+  width: 188px;
+  height: 92px;
+  position: absolute;
+  right: 227px;
+  top: 392px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.advantages-card.red .buy-car-btn button {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #D60000;
+  border: none;
+  padding: 20px 35px;
+}
+
+.advantages-card-title-black,
+.advantages-card-title-red {
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 85%;
+  letter-spacing: -15px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.advantages-card-title-red {
+  color: #D60000;
+}
+
+.advantages-card-info {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.6px;
+  max-width: 163px;
+  margin-bottom: 22px;
+}
+.advantages-card-info.red {
+  color: #D60000;
+}
+
+.red-circle-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 113%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 340px;
+  padding-top: 162px;
+  color: #fff;
+  margin-left: 70px;
+  margin-bottom: 33px;
+}
+
+.red-circle-info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  max-width: 395px;
+  margin-left: 70px;
+  color: #fff;
+}
+
+.red-circle {
+  width: 608px;
+  height: 608px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  mix-blend-mode: Multiply;
+}
+.red-circle .show-more-btn {
+  margin-left: 72px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.red-circle::before {
+  content: " ";
+  position: absolute;
+  background-color: #D60000;
+  border-radius: 50%;
+  opacity: 0.9;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: Multiply;
+}
+
+.constructor-car-img-box {
+  width: 940px;
+  height: 622px;
+  opacity: 1;
+  mix-blend-mode: Multiply;
+  position: absolute;
+  bottom: 134px;
+  right: 90px;
+}
+
+.constructor-section .container {
+  position: relative;
+}
+
+.elements-box {
+  width: 100%;
+  position: relative;
+}
+
+.constructor-section {
+  margin-top: 140px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #D60000;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.auction-card-img-box {
+  height: 250px;
+  width: 100%;
+}
+.auction-card-img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.auction-card-info {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 2.5%;
+  margin-bottom: 40px;
+}
+
+.auction-cards {
+  display: flex;
+  gap: 44px;
+}
+
+.info-red-card {
+  position: relative;
+  height: 486px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.info-red-card .info-red-card-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.info-red-card * {
+  position: relative;
+  z-index: 2;
+}
+.info-red-card .show-more-btn {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: white;
+}
+
+.info-red-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #D60000;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.red-card-title {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  line-height: 109%;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.cards-box {
+  display: flex;
+  gap: 39px;
+}
+
+.info-section {
+  background: url(../images/info-bg.png) no-repeat center center;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 153px;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 32px;
+}
+.footer .container {
+  display: flex;
+  gap: 121px;
+  margin-top: 37px;
+  align-items: start;
+}
+
+.footer-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 174%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff !important;
+}
+
+.assorti-footer-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.location-link {
+  gap: 4px;
+  align-items: start;
+  max-width: 166px;
+}
+
+.footer-link.vk {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-link-box {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.footer-link-box.second {
+  gap: 6px;
+}
+
+.footer-left {
+  display: flex;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-title {
+  font-weight: 700;
+  color: #D60000;
+  margin-bottom: 7px;
+  font-style: Bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.footer-right-first {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 57px;
+  align-items: start;
+}
+
+.footer-right-first.third {
+  margin-left: 8px;
+}
+
+.footer-right-first.last {
+  margin-left: 15px;
+}
+
+.footer-bottom {
+  background-color: #D60000;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom .footer-bottom-right {
+  display: flex;
+  gap: 190px;
+}
+
+.red-line {
+  width: 458px;
+  height: 1px;
+  background-color: #D60000;
+}
+
+.red-line.right {
+  width: 458px;
+  height: 1px;
+  background-color: #D60000;
+  z-index: 1;
+}
+
+.footer-link.bottom {
+  font-weight: 400;
+  font-size: 10px !important;
+  line-height: 174%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff !important;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.header-mobile-link {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-mobile-link {
+    display: block;
+    margin-left: 10px;
+  }
+  .container {
+    padding: 0 8px !important;
+  }
+  .header-mobile-link.assorti-logo img {
+    width: 65px !important;
+    height: 31px !important;
+  }
+  .header-mobile-link img {
+    width: 20px;
+    height: 20px;
+  }
+  .header-desktop-logo {
+    display: none;
+  }
+  .header-red-big-logo img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+.header-right-logo-box {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 950px) {
+  .footer-right {
+    display: none !important;
+  }
+  .menu-btn {
+    display: block !important;
+  }
+  .footer-link.location-link {
+    max-width: 100%;
+  }
+  .footer-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .red-line {
+    display: none !important;
+  }
+  .footer-top {
+    padding: 0 20px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-bottom .container {
+    flex-direction: column !important;
+    justify-content: start !important;
+    align-items: center !important;
+  }
+  .footer-bottom .footer-bottom-right {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .footer-left {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+  .footer-link-box {
+    gap: 12px !important;
+  }
+}
+.buy-car-btn-big {
+  display: none !important;
+}
+
+.advantages-card-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Dastlab 4 ta ustun */
+  gap: 20px; /* Kartalar orasidagi masofa */
+  justify-content: center;
+  width: 100%;
+}
+
+/* Tablet (maks. 1024px) - 2 ta ustun */
+@media (max-width: 1024px) {
+  .advantages-card-box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+    width: 100%;
+  }
+}
+/* Mobile (maks. 768px) - 1 ta ustun */
+@media (max-width: 768px) {
+  .sub-title {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 180%;
+    letter-spacing: 8px !important;
+    text-transform: uppercase;
+  }
+  .advantages-card-box {
+    gap: 0;
+  }
+  .advantages-card.red {
+    padding: 13px !important;
+  }
+  .advantages-title-img {
+    width: 36px;
+    height: 76px;
+  }
+  .advantages-card-box {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 85%;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+  }
+  .advantages-card-box .advantages-card,
+  .advantages-card-box .advantages-card.red {
+    flex-direction: row !important;
+    align-items: center !important;
+    width: 100%;
+    justify-content: space-between !important;
+    padding-top: 13px;
+    border-width: 3px;
+    padding-bottom: 13px;
+    padding-right: 16px;
+    padding-left: 13px;
+    width: 100% !important;
+    height: 53px !important;
+  }
+  .advantages-card-box .advantages-card .advantages-card-title-black,
+  .advantages-card-box .advantages-card .advantages-card-title-red,
+  .advantages-card-box .advantages-card.red .advantages-card-title-black,
+  .advantages-card-box .advantages-card.red .advantages-card-title-red {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 85%;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+  }
+  .advantages-card-box .advantages-card .advantages-card-info,
+  .advantages-card-box .advantages-card.red .advantages-card-info {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 90%;
+    letter-spacing: -0.5px;
+    margin: 0;
+  }
+  .advantages-card-box .advantages-card .show-more-btn span,
+  .advantages-card-box .advantages-card.red .show-more-btn span {
+    display: none;
+  }
+  .advantages-card-box .advantages-card .show-more-btn img,
+  .advantages-card-box .advantages-card.red .show-more-btn img {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 1333px) {
+  .card-map-img {
+    display: none;
+  }
+  .buy-car-btn {
+    display: none !important;
+  }
+  .buy-car-btn button {
+    display: none !important;
+  }
+}
+.advantages-centred-box {
+  display: flex;
+  justify-content: center;
+}
+
+.buy-car-btn-big {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 79%;
+  letter-spacing: -0.5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  color: #fff;
+  background-color: #D60000;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.swiper {
+  overflow: visible !important;
+}
+
+@media (max-width: 820px) {
+  .constructor-car-img-box {
+    width: 397px !important;
+    height: 262px !important;
+    mix-blend-mode: Multiply;
+  }
+  .constructor-car-img-box img {
+    width: 100%;
+    height: 100%;
+  }
+  .red-circle {
+    width: 347px !important;
+    height: 347px !important;
+  }
+  .red-circle-title {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 113%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 227px;
+    padding: 0;
+    margin-block: 38px 20px;
+  }
+  .red-circle .red-circle-info {
+    width: 231px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 113%;
+  }
+  .red-circle {
+    top: -155px;
+    left: -37px;
+  }
+  .constructor-car-img-box {
+    bottom: 0;
+    left: -82px;
+  }
+}
+@media (max-width: 768px) {
+  .swiper.introSwiper .swiper-slide .intro-title {
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 85%;
+    letter-spacing: -8px;
+    text-transform: uppercase;
+  }
+  .swiper.introSwiper .swiper-slide .intro-cars-img {
+    left: 0;
+  }
+  .swiper.introSwiper .swiper-slide .intro-cars-img .desktop-img {
+    display: none;
+  }
+  .swiper.introSwiper .swiper-slide .intro-cars-img .mobile-img {
+    width: 265px;
+    height: 218px;
+  }
+  .swiper.introSwiper .swiper-slide .intro-info {
+    display: none;
+  }
+  .swiper.introSwiper .swiper-slide .intro-info.desktop {
+    display: block;
+  }
+  .swiper.introSwiper .swiper-slide .black-borders-box {
+    width: 55px;
+    height: 190px;
+    padding: 0;
+    padding-top: 16px;
+    gap: 4px;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 32px;
+    left: 22px;
+  }
+  .swiper.introSwiper .swiper-slide .black-border-box {
+    font-size: 16px;
+  }
+  .swiper.introSwiper .swiper-slide .intro-bg-buildings,
+  .swiper.introSwiper .swiper-slide .intro-red-circle {
+    display: none;
+  }
+  .intro-info.desktop {
+    display: none !important;
+  }
+  .intro-info.mobile {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+.intro-info.mobile {
+  display: none;
+}
+
+.intro .container {
+  display: flex;
+  position: relative;
+}
+
+.intro-title {
+  font-weight: 900;
+  font-size: 140px;
+  line-height: 85%;
+  letter-spacing: -21px;
+  text-transform: uppercase;
+  color: #d60000;
+}
+
+.intro-info {
+  max-width: 114px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  margin-top: 162px;
+}
+
+.black-border-box {
+  width: 32px !important;
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 96%;
+  text-transform: uppercase;
+}
+
+.black-borders-box {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  padding-top: 36px;
+  border: 5px solid #000000;
+  width: 141px;
+  height: 487px;
+  position: relative;
+  position: absolute;
+  top: 96px;
+  left: 137px;
+}
+
+.buy-car-btn {
+  background-color: #d60000;
+  color: #fff;
+  width: 218px;
+  height: 50px;
+  font-weight: 700;
+  border: none;
+  font-size: 14px;
+  line-height: 79%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 334px;
+  left: 81px;
+}
+
+.intro-cars-img {
+  width: 1119px;
+  height: 469px;
+}
+.intro-cars-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.intro-cars-img {
+  position: absolute;
+  top: 180px;
+  z-index: 2;
+  left: 329px;
+}
+
+.swiper-slide {
+  overflow: visible !important;
+}
+
+.intro-red-circle {
+  width: 362px;
+  height: 362px;
+  top: 0;
+  right: 956px;
+  position: absolute;
+  z-index: 0;
+}
+.intro-red-circle img {
+  width: 100%;
+  height: 100%;
+}
+
+.intro .swiper-slide {
+  width: 100% !important;
+  margin: 0;
+}
+.intro .swiper-slides-element-box {
+  position: relative;
+  margin: 0;
+}
+.intro .swiper {
+  margin: 0 !important;
+}
+
+.intro-bg-buildings {
+  width: 576px;
+  position: absolute;
+  top: 140px;
+  right: 1124px;
+}
+.intro-bg-buildings img {
+  width: 100%;
+}
+
+.swiper.mySwiper .swiper-slide {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */
