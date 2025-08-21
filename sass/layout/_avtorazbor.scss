@@ -23,6 +23,7 @@
     height: 608px;
     border-radius: 50%;
     position: relative;
+    left: -51px;
     display: flex;
     flex-direction: column;
     .show-more-btn{
@@ -49,8 +50,8 @@
     opacity: 1;
     mix-blend-mode: Multiply;
     position: absolute;
-    bottom: 134px;
-    right: 90px;
+    bottom: 164px;
+    right: -223px;
 }
 .constructor-section{
     .container{

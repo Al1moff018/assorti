@@ -6,6 +6,7 @@
     <title>Assorti-Motors</title>
     <link rel="stylesheet" href="fonts/Plumb/stylesheet.css">
     <link rel="stylesheet" href="fonts/inter/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Druk-font/drukwidecyr-bold.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" href="images/Assorti-footer-logo.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -14,7 +15,6 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="container header">
             <div>
                 <a class="header-red-big-logo" href="#!">
                     <img src="images/header-left.png" alt="header-left">
@@ -36,7 +36,6 @@
                 <a class="header-mobile-link" href="#!"><img src="images/icons/whatsapp-icon.svg" alt=""></a>
                 <a class="header-mobile-link" href="#!"><img src="images/icons/header-car.svg" alt=""></a>
             </div>
-            </div>
         </header>
         <main>
             <section class="intro">
@@ -50,10 +49,12 @@
                                         <p class="intro-info desktop">Если вам нужен оригинальный японский автомобиль с гарантировано чистой родословной, Ваш путь – на аукционы Японии.</p>
                                     </div>
                                     <div class="black-borders-box">
-                                        <p class="black-border-box"> <span>с</span> <span>а</span> <span>у</span> <span>к</span> <span>ц</span> <span>и</span> <span>о</span> <span>н</span> <span>о</span> <span>в</span></p>
-                                        <p class="black-border-box"> <span>я</span> <span>п</span> <span>о</span> <span>н</span>
+                                        <p class="black-border-box left"> <span class="black-box-uppercase">с</span> <span>а</span> <span>у</span> <span>к</span> <span>ц</span> <span>и</span> <span>о</span> <span>н</span> <span>о</span> <span>в</span></p>
+                                        <p class="black-border-box right"> <span>я</span> <span>п</span> <span>о</span> <span>н</span>
                                         <span>и</span> <span>и</span>
-                                                <button class="buy-car-btn">заказать авто</button>
+                                        <div class="buy-car-btn intro">
+                                            <button>заказать авто</button>
+                                        </div>
                                     </div>
                                     <div class="intro-cars-img">
                                         <img class="desktop-img" src="images/swiper-images.png" alt="">
@@ -67,7 +68,7 @@
                                     </div>
                                     <p class="intro-info mobile">Если вам нужен оригинальный японский автомобиль с гарантировано чистой родословной, Ваш путь – на аукционы Японии.</p>
                                 </div>
-                            </div>
+                            </div>  
                             <div class="swiper-slide">
                                 <div class="swiper-slides-element-box">
                                     <div>
@@ -119,9 +120,10 @@
                 </div>
             </section>
             <section class="advantages-section">
+                <img class="advantages-bg" src="images/info-bg.png" alt="">
                 <div class="container">
                     <div class="advantages-title-box">
-                        <h1 class="title">преимущества:
+                        <h1 class="title-advantages">преимущества:
                             <span class="sub-title">работы с нами</span>
                         </h1>
                         <img class="advantages-title-img" src="images/title-icon.svg" alt="">
@@ -130,31 +132,155 @@
                     <div class="advantages-card-box">
                         <div class="advantages-card">
                             <h1 class="advantages-card-title-black">18</h1>
-                            <p class="advantages-card-info">лет возим автомобили с Востока</p>
+                            <p class="advantages-card-info-1">лет возим автомобили с Востока</p>
                             
-                            <a class="show-more-btn" href="#!"><span>История</span> <img src="images/icons/arrow-right.svg" alt="arrow-right"></a>
+                            <a class="show-more-btn card-1" href="#!"><span>История</span> <img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
                         </div>
                         <div class="advantages-card">
-                            <h1 class="advantages-card-title-black">300+</h1>
-                            <p class="advantages-card-info">постоянных клиентов</p>
-                            <a class="show-more-btn" href="#!"><span>Как мы работаем</span>  <img src="images/icons/arrow-right.svg" alt="arrow-right"></a>
+                            <h1 class="advantages-card-title-black customers">300+</h1>
+                            <p class="advantages-card-info-2">постоянных клиентов</p>
+                            <a class="show-more-btn card-2" href="#!"><span>Как мы работаем</span>  <img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
                         </div>
                         <div class="advantages-card red">
                             <h1 class="advantages-card-title-red">2000+</h1>
-                            <p class="advantages-card-info red">машин уже привезли за годы работы</p>
-                            <a class="show-more-btn" href="#!"><span> Смотреть галерею </span><img src="images/icons/arrow-right.svg" alt="arrow-right"></a>
+                            <p class="advantages-card-info-3 red">машин уже привезли за годы работы</p>
+                            <a class="show-more-btn card-red" href="#!"><span> Смотреть галерею </span><img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
                             <img class="card-map-img" src="images/card-map-img.svg" alt="map">
                             <div class="buy-car-btn">
                                 <button>заказать  авто</button>
                             </div>
                         </div>
                         <div class="advantages-card">
-                            <h1 class="advantages-card-title-black">0</h1>
-                            <p class="advantages-card-info">негативных отзывов</p>
-                            <a class="show-more-btn" href="#!"><span>Как мы работаем</span> <img src="images/icons/arrow-right.svg" alt="arrow-right"></a>
+                            <h1 class="advantages-card-title-black card-4">0</h1>
+                            <p class="advantages-card-info-4">негативных отзывов</p>
+                            <a class="show-more-btn card-4" href="#!"><span>Читать отзывы</span> <img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
                         </div>
                         <button class="buy-car-btn-big">заказать  авто</button>
                     </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-big">
+                    <h1 class="title">разборная техника:
+                        <br>
+                        <span class="sub-title">конструкторы    распилы    автозапчасти</span>
+                    </h1>
+                    <div class="razbornaya-bottom">
+                        <div>
+                            <p class="construction-info">На территорию Российской Федерации под полную пошлину разрешено завозить автомобили 2007-го года выпуска и младше. Автомобили старше 2007-го года можно завезти только в разбор (без ПТС): распилом или конструктором.</p>
+                            <a class="show-more-btn" href="#!">Об услуге<img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
+                        </div>
+                        <div class="swiper-box">
+                            <div class="swiper productSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-img-box">
+                                                <img src="images/product-car-img.png" alt="car-img">
+                                                <span class="product-img-box-year">2017</span>
+                                            </div>
+                                            <div class="product-content">
+                                                <div class="product-content-top">
+                                                    <div class="product-name-box">
+                                                        <span class="car-name">TOYOTA HARRIER</span>
+                                                        <img class="slash-icon" src="images/icons/slash-icon.svg" alt="/">
+                                                        <span class="product-id">ASU60W</span>
+                                                    </div>
+                                                    <div>
+                                                        <p class="product-price">
+                                                            <span class="product-price-sub-title">
+                                                                КОНСТРУКТОР
+                                                            </span>
+                                                            1 571 677 ₽
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <button class="product-buy-btn">КУПИТЬ ПОДОБНЫЙ АВТО</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-img-box">
+                                                <img src="images/product-car-img.png" alt="car-img">
+                                                <span class="product-img-box-year">2017</span>
+                                            </div>
+                                            <div class="product-content">
+                                                <div class="product-content-top">
+                                                    <div class="product-name-box">
+                                                        <span class="car-name">TOYOTA HARRIER</span>
+                                                        <img class="slash-icon" src="images/icons/slash-icon.svg" alt="/">
+                                                        <span class="product-id">ASU60W</span>
+                                                    </div>
+                                                    <div>
+                                                        <p class="product-price">
+                                                            <span class="product-price-sub-title">
+                                                                КОНСТРУКТОР
+                                                            </span>
+                                                            1 571 677 ₽
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <button class="product-buy-btn">КУПИТЬ ПОДОБНЫЙ АВТО</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-img-box">
+                                                <img src="images/product-car-img.png" alt="car-img">
+                                                <span class="product-img-box-year">2017</span>
+                                            </div>
+                                            <div class="product-content">
+                                                <div class="product-content-top">
+                                                    <div class="product-name-box">
+                                                        <span class="car-name">TOYOTA HARRIER</span>
+                                                        <img class="slash-icon" src="images/icons/slash-icon.svg" alt="/">
+                                                        <span class="product-id">ASU60W</span>
+                                                    </div>
+                                                    <div>
+                                                        <p class="product-price">
+                                                            <span class="product-price-sub-title">
+                                                                КОНСТРУКТОР
+                                                            </span>
+                                                            1 571 677 ₽
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <button class="product-buy-btn">КУПИТЬ ПОДОБНЫЙ АВТО</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-img-box">
+                                                <img src="images/product-car-img.png" alt="car-img">
+                                                <span class="product-img-box-year">2017</span>
+                                            </div>
+                                            <div class="product-content">
+                                                <div class="product-content-top">
+                                                    <div class="product-name-box">
+                                                        <span class="car-name">TOYOTA HARRIER</span>
+                                                        <img class="slash-icon" src="images/icons/slash-icon.svg" alt="/">
+                                                        <span class="product-id">ASU60W</span>
+                                                    </div>
+                                                    <div>
+                                                        <p class="product-price">
+                                                            <span class="product-price-sub-title">
+                                                                КОНСТРУКТОР
+                                                            </span>
+                                                            1 571 677 ₽
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <button class="product-buy-btn">КУПИТЬ ПОДОБНЫЙ АВТО</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -173,7 +299,7 @@
                                 <div>
                                     <h2 class="card-title">Рынок или аукцион? Каковы плюсы и минусы покупки автомобиля на аукционах?</h2>
                                     <p class="auction-card-info">Главный плюс — гарантия покупки автомобиля именно в том состоянии, которое вам обещают. Аукционная оценка — аспект, выгодно отличающий аукцион от автомобильного рынка. </p>
-                                    <a class="show-more-btn" href="#!">Читать подробнее <img src="images/icons/arrow-right.svg" alt="arrow-right"></a>
+                                    <a class="show-more-btn" href="#!">Читать подробнее <img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
                                 </div>
                             </div>
                             </div>
@@ -185,7 +311,7 @@
                                     <div>
                                         <h2 class="card-title">Рынок или аукцион? Каковы плюсы и минусы покупки автомобиля на аукционах?</h2>
                                         <p class="auction-card-info">Главный плюс — гарантия покупки автомобиля именно в том состоянии, которое вам обещают. Аукционная оценка — аспект, выгодно отличающий аукцион от автомобильного рынка. </p>
-                                        <a class="show-more-btn" href="#!">Читать подробнее <img src="images/icons/arrow-right.svg" alt="arrow-right"></a>
+                                        <a class="show-more-btn" href="#!">Читать подробнее <img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
                                     </div>
                                 </div>
                             </div>

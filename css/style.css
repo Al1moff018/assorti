@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.header {
+header {
   display: flex;
   justify-content: space-between;
 }
@@ -20,6 +20,11 @@ body {
 
 .container {
   max-width: 1240px;
+  margin: 0 auto;
+}
+
+.container-big {
+  width: 1218px;
   margin: 0 auto;
 }
 
@@ -94,12 +99,27 @@ body {
 .advantages-section {
   margin-top: 136px;
   margin-bottom: 46px;
+  position: relative;
+}
+
+.advantages-bg {
+  position: absolute;
+  top: -106px;
 }
 
 .advantages-title-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 1122px;
+}
+
+.advantages-centred-box {
+  margin-top: -80px;
+}
+
+.advantages-title-img {
+  margin-top: 23px;
 }
 
 .advantages-card {
@@ -111,40 +131,54 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 34px;
-  padding-top: 20px;
+  margin-top: 92px;
+  margin-left: 63px;
 }
 .advantages-card.red {
   width: 272px !important;
-  padding-bottom: 490px;
+  padding-bottom: 507px;
   position: relative;
   z-index: 5;
+  padding-left: 20px;
   border: 7px solid #000000;
+  margin-left: 12px;
+  margin-top: 80px;
 }
 .advantages-card.red .card-map-img {
   position: absolute;
-  top: 122px;
-  right: -100px;
+  top: 136px;
+  right: -125px;
   z-index: -1;
-  transform: rotate(13deg);
 }
-.advantages-card.red .buy-car-btn {
+.advantages-card .buy-car-btn {
   width: 188px;
   height: 92px;
   position: absolute;
-  right: 227px;
-  top: 392px;
+  right: 250px;
+  top: 384px;
   display: flex;
   align-items: center;
   background-color: #fff;
 }
-.advantages-card.red .buy-car-btn button {
+.advantages-card .buy-car-btn button {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
   background-color: #D60000;
   border: none;
-  padding: 20px 35px;
+  padding: 17px 35px;
+  letter-spacing: 3px;
+  white-space: nowrap;
+}
+.advantages-card .show-more-btn {
+  gap: 7px;
+  align-items: center;
+}
+
+.show-more-btn.card-4 {
+  margin-top: 30px;
+  margin-left: 5px;
 }
 
 .advantages-card-title-black,
@@ -157,11 +191,27 @@ body {
   margin-bottom: 26px;
 }
 
-.advantages-card-title-red {
+.title-advantages {
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 85%;
+  margin-top: 93px;
+  margin-left: 103px;
+  letter-spacing: -9px;
+  text-transform: uppercase;
   color: #D60000;
 }
 
-.advantages-card-info {
+.advantages-card-title-red {
+  color: #D60000;
+  margin-top: 73px;
+  margin-left: 7px;
+}
+
+.advantages-card-info-1,
+.advantages-card-info-2,
+.advantages-card-info-3,
+.advantages-card-info-4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
@@ -169,8 +219,141 @@ body {
   max-width: 163px;
   margin-bottom: 22px;
 }
-.advantages-card-info.red {
+.advantages-card-info-1.red,
+.advantages-card-info-2.red,
+.advantages-card-info-3.red,
+.advantages-card-info-4.red {
   color: #D60000;
+}
+
+.advantages-card-info-1 {
+  margin-left: 3px;
+}
+
+.arrow-right-img {
+  width: 15px;
+  height: 15px;
+}
+
+.show-more-btn.card-1 {
+  margin-left: 5px;
+}
+
+.show-more-btn.card-2 {
+  margin-top: 29px;
+  margin-left: 11px;
+}
+
+.advantages-card-title-black.customers {
+  margin-left: 7px;
+}
+
+.advantages-card-info-2 {
+  margin-left: 10px;
+}
+
+.advantages-card-info-3 {
+  margin-left: 9px;
+}
+
+.advantages-card-info-4 {
+  margin-left: 6px;
+}
+
+.show-more-btn.card-red {
+  margin-left: 12px;
+}
+
+.advantages-card-title-black.card-4 {
+  margin-left: 6px;
+}
+
+.construction-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  width: 236px;
+}
+
+.razbornaya-bottom {
+  display: flex;
+  gap: 77px;
+}
+
+.product-img-box {
+  width: 360px;
+  height: 190px;
+  position: relative;
+  margin-bottom: 29px;
+}
+
+.product-img-box-year {
+  position: absolute;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 79%;
+  text-transform: uppercase;
+  padding: 28px 17px;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  top: 9px;
+  left: 9px;
+}
+
+.car-name {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 87%;
+  text-transform: uppercase;
+  width: 65px;
+  display: inline-block;
+}
+
+.product-name-box {
+  gap: 16px;
+  display: flex;
+}
+
+.slash-icon {
+  margin-right: 4px;
+}
+
+.product-id {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 101%;
+}
+
+.product-price {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 87%;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #D60000;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.product-price span {
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 150%;
+  letter-spacing: 3px;
+  color: #000;
+}
+
+.product-buy-btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 79%;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #D60000;
+  padding: 22px 35px;
+  margin-top: 34px;
 }
 
 .red-circle-title {
@@ -200,6 +383,7 @@ body {
   height: 608px;
   border-radius: 50%;
   position: relative;
+  left: -51px;
   display: flex;
   flex-direction: column;
   mix-blend-mode: Multiply;
@@ -228,8 +412,8 @@ body {
   opacity: 1;
   mix-blend-mode: Multiply;
   position: absolute;
-  bottom: 134px;
-  right: 90px;
+  bottom: 164px;
+  right: -223px;
 }
 
 .constructor-section .container {
@@ -650,8 +834,6 @@ body {
     width: 15px;
     height: 15px;
   }
-}
-@media (max-width: 1333px) {
   .card-map-img {
     display: none;
   }
@@ -744,6 +926,7 @@ body {
   .swiper.introSwiper .swiper-slide .intro-cars-img .mobile-img {
     width: 265px;
     height: 218px;
+    display: block;
   }
   .swiper.introSwiper .swiper-slide .intro-info {
     display: none;
@@ -753,10 +936,10 @@ body {
   }
   .swiper.introSwiper .swiper-slide .black-borders-box {
     width: 55px;
-    height: 190px;
+    height: 206px;
     padding: 0;
-    padding-top: 16px;
-    gap: 4px;
+    padding-top: 8px;
+    gap: 0 !important;
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
@@ -765,6 +948,9 @@ body {
   }
   .swiper.introSwiper .swiper-slide .black-border-box {
     font-size: 16px;
+  }
+  .swiper.introSwiper .swiper-slide .black-border-box.right {
+    margin: 0;
   }
   .swiper.introSwiper .swiper-slide .intro-bg-buildings,
   .swiper.introSwiper .swiper-slide .intro-red-circle {
@@ -782,6 +968,15 @@ body {
   display: none;
 }
 
+.product-content-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: 360px;
+}
+
 .intro .container {
   display: flex;
   position: relative;
@@ -794,6 +989,8 @@ body {
   letter-spacing: -21px;
   text-transform: uppercase;
   color: #d60000;
+  margin-top: 11px;
+  margin-left: 63px;
 }
 
 .intro-info {
@@ -802,9 +999,11 @@ body {
   font-size: 14px;
   line-height: 150%;
   margin-top: 162px;
+  margin-left: 59px;
 }
 
 .black-border-box {
+  font-family: "DrukWideCyr-Bold";
   width: 32px !important;
   display: flex;
   flex-direction: column;
@@ -814,9 +1013,12 @@ body {
   text-transform: uppercase;
 }
 
+.black-border-box.right {
+  margin-left: 19px;
+}
+
 .black-borders-box {
   display: flex;
-  gap: 18px;
   justify-content: center;
   padding-top: 36px;
   border: 5px solid #000000;
@@ -825,7 +1027,10 @@ body {
   position: relative;
   position: absolute;
   top: 96px;
-  left: 137px;
+  left: 210px;
+}
+.black-borders-box .black-box-uppercase {
+  margin-bottom: 35px;
 }
 
 .buy-car-btn {
@@ -841,23 +1046,24 @@ body {
   text-transform: uppercase;
   position: absolute;
   top: 334px;
-  left: 81px;
 }
 
 .intro-cars-img {
   width: 1119px;
-  height: 469px;
 }
 .intro-cars-img img {
   width: 100%;
   height: 100%;
 }
+.intro-cars-img .mobile-img {
+  display: none;
+}
 
 .intro-cars-img {
   position: absolute;
-  top: 180px;
+  top: 13px;
   z-index: 2;
-  left: 329px;
+  left: 308px;
 }
 
 .swiper-slide {
@@ -867,8 +1073,8 @@ body {
 .intro-red-circle {
   width: 362px;
   height: 362px;
-  top: 0;
-  right: 956px;
+  top: -40px;
+  right: 1172px;
   position: absolute;
   z-index: 0;
 }
@@ -892,8 +1098,8 @@ body {
 .intro-bg-buildings {
   width: 576px;
   position: absolute;
-  top: 140px;
-  right: 1124px;
+  top: 53px;
+  right: 1345px;
 }
 .intro-bg-buildings img {
   width: 100%;
@@ -902,6 +1108,33 @@ body {
 .swiper.mySwiper .swiper-slide {
   padding-left: 200px;
   padding-right: 200px;
+}
+
+.buy-car-btn.intro {
+  left: 111px;
+  top: 370px;
+}
+
+.buy-car-btn {
+  width: 188px;
+  height: 92px;
+  position: absolute;
+  right: 250px;
+  top: 504px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.buy-car-btn button {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #D60000;
+  border: none;
+  padding: 17px 35px;
+  letter-spacing: 3px;
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,6 +17,7 @@
                 .mobile-img{
                     width: 265px;
                     height: 218px;
+                    display: block;
                 }
             }
             .intro-info{
@@ -27,10 +28,10 @@
             }
             .black-borders-box{
                 width: 55px;
-                height: 190px;
+                height: 206px;
                 padding: 0;
-                padding-top: 16px;
-                gap: 4px;
+                padding-top: 8px;
+                gap: 0 !important;
                 justify-content: center;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -39,6 +40,9 @@
             }
             .black-border-box{
                 font-size: 16px;
+                &.right{
+                    margin: 0 ;
+                }
             }
             .intro-bg-buildings,
             .intro-red-circle{
@@ -56,4 +60,11 @@
 }
 .intro-info.mobile{
     display: none;
+}
+.product-content-top{
+    display: flex;
+    justify-content: space-between;
+}
+.product-card{
+    width: 360px;
 }
