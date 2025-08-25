@@ -6,8 +6,20 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+button{
+    cursor: pointer;
+    background: none;
+    border: none;
+}
 .wrapper{
     overflow: hidden !important;
+}
+.buy-car-btn {
+    button:hover{
+        background-color: #fff !important;
+        color: #D60000 !important;
+        border: 1px solid #D60000 !important;
+    }
 }
 .container{
     max-width: 1240px;

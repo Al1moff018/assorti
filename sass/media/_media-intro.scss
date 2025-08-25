@@ -8,6 +8,8 @@
                 line-height: 85%;
                 letter-spacing: -8px;
                 text-transform: uppercase;
+                margin-top: 16px;
+                margin-left: 5px;
             }
             .intro-cars-img{
                 left: 0;
@@ -16,8 +18,9 @@
                 }
                 .mobile-img{
                     width: 265px;
-                    height: 218px;
                     display: block;
+                    margin-left: 95px;
+                    margin-top: -10px;
                 }
             }
             .intro-info{
@@ -28,21 +31,33 @@
             }
             .black-borders-box{
                 width: 55px;
-                height: 206px;
+                height: 190px;
                 padding: 0;
                 padding-top: 8px;
                 gap: 0 !important;
                 justify-content: center;
                 padding-left: 10px;
                 padding-right: 10px;
-                top: 32px;
-                left: 22px;
+                top: 38px;
+                left: 26px;
+                border-width: 2px;
             }
             .black-border-box{
-                font-size: 16px;
+                font-size:13px;
+                display: flex;
+                flex-direction: column;
                 &.right{
-                    margin: 0 ;
+                    margin-left:9px;
+                    margin-top: 6px;
                 }
+                &.left{
+                    margin-right:-4px;
+                    margin-top: 5px;
+                }
+                .black-borders-box .black-box-uppercase {
+                    margin-bottom: 17px !important;
+                }
+
             }
             .intro-bg-buildings,
             .intro-red-circle{
@@ -55,16 +70,32 @@
     }
     .intro-info.mobile{
         display: block !important;
-        width: 100% !important;
+        max-width: 252px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 113%;
+        margin-top: 215px;
+        margin-left: 26px;
+        .show-more-btn.intro{
+            display: block;
+            margin-left: 0;
+            margin-top: 18px !important;
+        }
     }
-}
+        .buy-car-btn-big{
+            display: block !important;
+            width: 304px !important;
+            letter-spacing: 3px !important;
+            margin-top: 31px;
+        }
+    }
+    .show-more-btn.intro{
+        display: none;
+    }
 .intro-info.mobile{
     display: none;
 }
 .product-content-top{
     display: flex;
     justify-content: space-between;
-}
-.product-card{
-    width: 360px;
 }

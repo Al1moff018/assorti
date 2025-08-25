@@ -20,102 +20,215 @@
 
 /* Mobile (maks. 768px) - 1 ta ustun */
 @media (max-width: 768px) {
-      .sub-title{
-        font-weight: 900;
-        font-size: 14px;
-        line-height: 180%;
-        letter-spacing: 8px !important;
-        text-transform: uppercase;
-    }
-    .advantages-card-box{
-      gap: 0;
-    }
-    .advantages-card.red{
-      padding: 13px !important;
-    }
-    .advantages-title-img{
-        width: 36px;
-        height: 76px;
-    }
-  .advantages-card-box {
-    grid-template-columns: 1fr;
-    width: 100%;
+  *{
+    margin: 0;
   }
-  .title{
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 85%;
-    letter-spacing: -3px;
-    text-transform: uppercase;
-  }
-  .advantages-card-box .advantages-card,
-  .advantages-card-box .advantages-card.red {
-    flex-direction: row !important;
-    align-items: center !important;
-    width: 100%;
+  .advantages-card {
     justify-content: space-between !important;
-    padding-top: 13px;
-    border-width: 3px;
-    padding-bottom: 13px;
-    padding-right: 16px;
-    padding-left:13px;
-    width: 100% !important;
-    height: 53px !important;
-    .advantages-card-title-black,
-    .advantages-card-title-red {
-        font-weight: 900;
-        font-size: 32px;
-        line-height: 85%;
-        letter-spacing: -3px;
-        text-transform: uppercase;
-    }
-    .advantages-card-info{
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 90%;
-        letter-spacing: -0.5px;
-        margin: 0;
-    }
-    .show-more-btn{
-        span{
-            display: none;
-        }
-        img{
-            width: 15px;
-            height: 15px;
-        }
-    }
   }
-      .card-map-img{
-    display: none;
+  .show-more-btn{
+    margin: 0 !important;
   }
-  .buy-car-btn{
-    display: none !important;
-    button{
-        display: none !important;
-    }
-  }
-}
-.advantages-centred-box{
-    display: flex;
-    justify-content: center;
-}
-.buy-car-btn-big{
-    display: block;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 79%;
-    letter-spacing: -0.5px;
-    text-align: center;
-    text-transform: uppercase;
+  .advantages-title-box{
+    justify-content: safe;
+    margin-top: -100px;
     width: 100%;
-    color: #fff;
-    background-color: #D60000;
-    border: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    cursor: pointer;
-}
-.swiper{
-    overflow: visible !important;
-}
+    }
+    .advantages-card-title-black.first{
+      margin-left: -63px;
+      margin-top: -6px;
+    }
+    .advantages-card-title-black{
+      margin: 0;
+    }
+        .sub-title{
+          font-weight: 900;
+          font-size: 14px;
+          line-height: 180%;
+          letter-spacing: 3px !important;
+          text-transform: uppercase;
+          margin-top: 0;
+      }
+      .advantages-card-box{
+        gap: 0;
+      }
+      
+      .advantages-title-img{
+          width: 36px;
+          height: 76px;
+          margin-right: 6px;
+          margin-top: -17px;
+      }
+    .advantages-card-box {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+    .title{
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 85%;
+      letter-spacing: -3px;
+      text-transform: uppercase;
+    }
+    .advantages-card-box .advantages-card,
+    .advantages-card-box .advantages-card.red {
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-between;
+      padding-top: 13px;
+      border-width: 3px;
+      padding-bottom: 13px;
+      padding-right: 16px;
+      padding-left:13px;
+      width: 100% !important;
+      height: 53px !important;
+      .advantages-card-title-black,
+      .advantages-card-title-red {
+          font-weight: 900;
+          font-size: 32px;
+          line-height: 85%;
+          letter-spacing: -3px;
+          text-transform: uppercase;
+      }
+      .advantages-card-info{
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 90%;
+          letter-spacing: -0.5px;
+          margin: 0;
+          &-1{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 90%;
+            margin-left: 10px;
+            margin-top: 15px; 
+          }
+          &-3{
+            font-size: 14px !important;
+            margin-left: -13px;
+            margin-top: 22px;
+          }
+      }
+      .advantages-card{
+        justify-content: start !important;
+      }
+      .show-more-btn{ 
+          span{
+              display: none;
+          }
+          img{
+              width: 15px;
+              height: 15px;
+            }
+            &.card-1{
+              img{
+                margin-left: -18px;
+                margin-top: -6px;
+              }
+          }
+      }
+    }
+    .advantages-card.card-4{
+        margin-top: -24px;
+        margin-left: 24px;
+        .advantages-card-info-4{
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 90%;
+          margin-top: 22px;
+          margin-left: 55px;
+        }
+        .advantages-card-title-black{
+          font-size: 36px;
+          &.card-4{
+                margin-left: -23px;
+          }
+        }
+        .show-more-btn.card-4{
+          img{
+            margin-right: -6px;
+          }
+        }
+    }
+    .media-red-btn-intro{
+      margin-left: 0;
+      position: absolute;
+      bottom: -69px;
+    }
+    .advantages-card-title-red{
+        margin-top: 25px;
+        margin-left: -6px;
+      }
+    .advantages-card-info-2{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 90%;
+      letter-spacing: 0;
+      margin-left: -33px;
+      margin-top: -174px;
+    }
+    .advantages-card-title-black.customers{
+      margin-top: -196px;
+      margin-left: -64px;
+    }
+        .card-map-img{
+      display: none;
+    }
+    .buy-car-btn{
+      display: none !important;
+      button{
+          display: none !important;
+      }
+    }
+    .title-advantages{
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 85%;
+      letter-spacing: -3px;
+      text-transform: uppercase;
+      margin: 0;
+      margin-top: 88px;
+      margin-left: -3px;
+    }
+  .advantages-centred-box{
+      display: flex;
+      justify-content: center;
+      width: calc(100% - 60px);
+  }
+  .buy-car-btn-big{
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 79%;
+      letter-spacing: -0.5px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%;
+      color: #fff;
+      background-color: #D60000;
+      border: none;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      cursor: pointer;
+  } 
+  .swiper{
+      overflow: visible !important;
+  }
+  .show-more-btn.card-1{
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .show-more-btn.card-2{
+    img{
+        margin-top: -199px;
+        margin-left: -18px;
+    }
+  }
+  .advantages-card.red{
+        width: 304px;
+        padding: 0;
+        margin-top: -88px;
+        margin-left: 1px;
+      }
+  }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="fonts/Druk-font/drukwidecyr-bold.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" href="images/Assorti-footer-logo.svg">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="swiper-offline/swiper.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,24 +17,24 @@
         <header>
             <div>
                 <a class="header-red-big-logo" href="#!">
-                    <img src="images/header-left.png" alt="header-left">
+                    <img src="images/header-left.svg" alt="header-left">
                 </a>
             </div>
             <div class="header-right-logo-box">
                 <a href="#!" class="header-desktop-logo">
-                    <img src="images/header-logo.png" alt="logo">
+                    <img src="images/header-logo.svg" alt="logo">
                 </a>
                 <a class="header-mobile-link assorti-logo" href="#!">
                     <img src="images/icons/header-mobile-logo.svg" alt="Assorti-Motors">
                 </a>
             </div>
             <div class="header-right-logo-box">
-                <a class="header-desktop-logo" href="#!">
-                    <img src="images/header-right.png" alt="header-right">
+                <a class="header-desktop-logo right" href="#!">
+                    <img src="images/header-right.svg" alt="header-right">
                 </a>
-                <a class="header-mobile-link" href="#!"><img src="images/icons/header-skype.svg" alt=""></a>
-                <a class="header-mobile-link" href="#!"><img src="images/icons/whatsapp-icon.svg" alt=""></a>
-                <a class="header-mobile-link" href="#!"><img src="images/icons/header-car.svg" alt=""></a>
+                <a class="header-mobile-link skype" href="#!"><img src="images/icons/header-skype.svg" alt=""></a>
+                <a class="header-mobile-link whatsapp" href="#!"><img src="images/icons/header-mobile-whatsapp-icon.svg" alt=""></a>
+                <a class="header-mobile-link car-icon" href="#!"><img src="images/icons/header-car.svg" alt=""></a>
             </div>
         </header>
         <main>
@@ -42,6 +42,37 @@
                 <div class="container">
                     <div class="swiper introSwiper">
                         <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-slides-element-box">
+                                    <div>
+                                        <h1 class="intro-title">автомобили</h1>
+                                        <p class="intro-info desktop">Если вам нужен оригинальный японский автомобиль с гарантировано чистой родословной, Ваш путь – на аукционы Японии.</p>
+                                        <a class="show-more-btn intro" href="#!"><span>Об услуге</span> <img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
+                                    </div>
+                                    <div class="black-borders-box">
+                                        <p class="black-border-box left"> <span class="black-box-uppercase">с</span> <span>а</span> <span>у</span> <span>к</span> <span>ц</span> <span>и</span> <span>о</span> <span>н</span> <span>о</span> <span>в</span></p>
+                                        <p class="black-border-box right"> <span>я</span> <span>п</span> <span>о</span> <span>н</span>
+                                        <span>и</span> <span>и</span>
+                                        <div class="buy-car-btn intro">
+                                            <button>заказать авто</button>
+                                        </div>
+                                    </div>
+                                    <div class="intro-cars-img">
+                                        <img class="desktop-img" src="images/swiper-images.png" alt="">
+                                        <img class="mobile-img" src="images/swiper-images-media.png" alt="">
+                                    </div>
+                                    <div class="intro-red-circle">
+                                        <img src="images/red-circle-intor-img.png" alt="circle">
+                                    </div>
+                                    <div class="intro-bg-buildings">
+                                        <img src="images/intro-bg-img.png" alt="">
+                                    </div>
+                                    <p class="intro-info mobile">Если вам нужен оригинальный японский автомобиль с гарантировано чистой родословной, Ваш путь – на аукционы Японии.
+                                        <a class="show-more-btn intro" href="#!"><span>Об услуге</span> <img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
+                                    </p>
+                                        <button class="buy-car-btn-big intro">Заказать авто</button>  
+                                </div>
+                            </div>  
                             <div class="swiper-slide">
                                 <div class="swiper-slides-element-box">
                                     <div>
@@ -68,44 +99,24 @@
                                     </div>
                                     <p class="intro-info mobile">Если вам нужен оригинальный японский автомобиль с гарантировано чистой родословной, Ваш путь – на аукционы Японии.</p>
                                 </div>
-                            </div>  
-                            <div class="swiper-slide">
-                                <div class="swiper-slides-element-box">
-                                    <div>
-                                        <h1 class="intro-title">автомобили</h1>
-                                        <p class="intro-info">Если вам нужен оригинальный японский автомобиль с гарантировано чистой родословной, Ваш путь – на аукционы Японии.</p>
-                                    </div>
-                                    <div class="black-borders-box">
-                                        <p class="black-border-box"> <span>с</span> <span>а</span> <span>у</span> <span>к</span> <span>ц</span> <span>и</span> <span>о</span> <span>н</span> <span>о</span> <span>в</span></p>
-                                        <p class="black-border-box"> <span>я</span> <span>п</span> <span>о</span> <span>н</span>
-                                        <span>и</span> <span>и</span>
-                                                <button class="buy-car-btn">заказать авто</button>
-                                    </div>
-                                    <div class="intro-cars-img">
-                                        <img src="images/swiper-images.png" alt="">
-                                    </div>
-                                    <div class="intro-red-circle">
-                                        <img src="images/red-circle-intor-img.png" alt="circle">
-                                    </div>
-                                    <div class="intro-bg-buildings">
-                                        <img src="images/intro-bg-img.png" alt="">
-                                    </div>
-                                </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-slides-element-box">
                                     <div>
                                         <h1 class="intro-title">автомобили</h1>
-                                        <p class="intro-info">Если вам нужен оригинальный японский автомобиль с гарантировано чистой родословной, Ваш путь – на аукционы Японии.</p>
+                                        <p class="intro-info desktop">Если вам нужен оригинальный японский автомобиль с гарантировано чистой родословной, Ваш путь – на аукционы Японии.</p>
                                     </div>
                                     <div class="black-borders-box">
-                                        <p class="black-border-box"> <span>с</span> <span>а</span> <span>у</span> <span>к</span> <span>ц</span> <span>и</span> <span>о</span> <span>н</span> <span>о</span> <span>в</span></p>
-                                        <p class="black-border-box"> <span>я</span> <span>п</span> <span>о</span> <span>н</span>
+                                        <p class="black-border-box left"> <span class="black-box-uppercase">с</span> <span>а</span> <span>у</span> <span>к</span> <span>ц</span> <span>и</span> <span>о</span> <span>н</span> <span>о</span> <span>в</span></p>
+                                        <p class="black-border-box right"> <span>я</span> <span>п</span> <span>о</span> <span>н</span>
                                         <span>и</span> <span>и</span>
-                                                <button class="buy-car-btn">заказать авто</button>
+                                        <div class="buy-car-btn intro">
+                                            <button>заказать авто</button>
+                                        </div>
                                     </div>
                                     <div class="intro-cars-img">
-                                        <img src="images/swiper-images.png" alt="">
+                                        <img class="desktop-img" src="images/swiper-images.png" alt="">
+                                        <img class="mobile-img" src="images/swiper-images-media.png" alt="">
                                     </div>
                                     <div class="intro-red-circle">
                                         <img src="images/red-circle-intor-img.png" alt="circle">
@@ -113,9 +124,11 @@
                                     <div class="intro-bg-buildings">
                                         <img src="images/intro-bg-img.png" alt="">
                                     </div>
+                                    <p class="intro-info mobile">Если вам нужен оригинальный японский автомобиль с гарантировано чистой родословной, Ваш путь – на аукционы Японии.</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -131,9 +144,8 @@
                     <div class="advantages-centred-box">
                     <div class="advantages-card-box">
                         <div class="advantages-card">
-                            <h1 class="advantages-card-title-black">18</h1>
+                            <h1 class="advantages-card-title-black first">18</h1>
                             <p class="advantages-card-info-1">лет возим автомобили с Востока</p>
-                            
                             <a class="show-more-btn card-1" href="#!"><span>История</span> <img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
                         </div>
                         <div class="advantages-card">
@@ -150,17 +162,19 @@
                                 <button>заказать  авто</button>
                             </div>
                         </div>
-                        <div class="advantages-card">
+                        <div class="advantages-card card-4">
                             <h1 class="advantages-card-title-black card-4">0</h1>
                             <p class="advantages-card-info-4">негативных отзывов</p>
                             <a class="show-more-btn card-4" href="#!"><span>Читать отзывы</span> <img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
                         </div>
-                        <button class="buy-car-btn-big">заказать  авто</button>
+                        <div class="media-red-btn-intro">
+                            <button class="buy-car-btn-big">заказать  авто</button>
+                        </div>
                     </div>
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="razbornaya-section">
                 <div class="container-big">
                     <h1 class="title">разборная техника:
                         <br>
@@ -169,7 +183,7 @@
                     <div class="razbornaya-bottom">
                         <div>
                             <p class="construction-info">На территорию Российской Федерации под полную пошлину разрешено завозить автомобили 2007-го года выпуска и младше. Автомобили старше 2007-го года можно завезти только в разбор (без ПТС): распилом или конструктором.</p>
-                            <a class="show-more-btn" href="#!">Об услуге<img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
+                            <a class="show-more-btn razbornaya" href="#!">Об услуге<img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
                         </div>
                         <div class="swiper-box">
                             <div class="swiper productSwiper">
@@ -279,7 +293,95 @@
                                         </div>
                                     </div>
                                 </div> 
+                                <div class="product-swiper-navigation-box">
+                                    <div class="product-swiper-prev"><img src="images/icons/swiper-navigation-prev.svg" alt="left-arrow"></div>
+                                    <div class="product-swiper-next"><img src="images/icons/swiper-navigation-next.svg" alt="right-arrow"></div>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="useful-section">
+                <div class="container">
+                    <div class="useful-top">
+                        <div class="useful-left">
+                            <h1 class="title">полезное:</h1>
+                            <div class="useful-left-top">
+                                <div class="online-auctions-box">
+                                            <p class="black-border-box left"> <span class="black-box-uppercase">а</span> <span>у</span> <span>к</span> <span>ц</span> <span>и</span> <span>о</span> <span>н</span> <span>ы</span>
+                                            <p class="black-border-box right"> <span>о</span> <span>н</span> <span>л</span> <span>а</span>
+                                            <span>й</span> <span>н</span>
+                                            <div class="buy-car-btn intro">
+                                                <button>заказать авто</button>
+                                            </div>
+                                </div>
+                                <div>
+                                <p class="construction-info useful">Еженедельно торгуется до 100 000 автомобилей. У вас есть возможность приобрести любой из них.</p>
+                                <a class="show-more-btn razbornaya" href="#!">Об услуге<img src="images/icons/arrow-right.svg" class="arrow-right-img" alt="arrow-right"></a>
+                                <img class="useful-phone-img" src="images/useful-phone-img.png" alt="iphone">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="useful-right">
+                            <div class="red-circle">
+                                        <h1 class="red-circle-title useful">статистика
+                                        продаж</h1>
+                                        <p class="red-circle-info useful">Позволяет просмотреть проданные автомобили и определиться с размером ставки на интересующий Вас автомобиль.
+                                            <a class="show-more-btn useful" href="#!">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.28516 11.4438L11.2852 8.44385L8.28516 5.44385L7.23516 6.49385L8.43516 7.69385H5.28516V9.19385H8.43516L7.23516 10.3938L8.28516 11.4438ZM8.28516 15.9438C7.24766 15.9438 6.27266 15.7468 5.36016 15.3528C4.44766 14.9588 3.65391 14.4246 2.97891 13.7501C2.30391 13.0751 1.76966 12.2813 1.37616 11.3688C0.982656 10.4563 0.785656 9.48135 0.785156 8.44385C0.785156 7.40635 0.982156 6.43135 1.37616 5.51885C1.77016 4.60635 2.30441 3.8126 2.97891 3.1376C3.65391 2.4626 4.44766 1.92835 5.36016 1.53485C6.27266 1.14135 7.24766 0.944348 8.28516 0.943848C9.32266 0.943848 10.2977 1.14085 11.2102 1.53485C12.1227 1.92885 12.9164 2.4631 13.5914 3.1376C14.2664 3.8126 14.8009 4.60635 15.1949 5.51885C15.5889 6.43135 15.7857 7.40635 15.7852 8.44385C15.7852 9.48135 15.5882 10.4563 15.1942 11.3688C14.8002 12.2813 14.2659 13.0751 13.5914 13.7501C12.9164 14.4251 12.1227 14.9596 11.2102 15.3536C10.2977 15.7476 9.32266 15.9443 8.28516 15.9438ZM8.28516 14.4438C9.96016 14.4438 11.3789 13.8626 12.5414 12.7001C13.7039 11.5376 14.2852 10.1188 14.2852 8.44385C14.2852 6.76885 13.7039 5.3501 12.5414 4.1876C11.3789 3.0251 9.96016 2.44385 8.28516 2.44385C6.61016 2.44385 5.19141 3.0251 4.02891 4.1876C2.86641 5.3501 2.28516 6.76885 2.28516 8.44385C2.28516 10.1188 2.86641 11.5376 4.02891 12.7001C5.19141 13.8626 6.61016 14.4438 8.28516 14.4438Z" fill="#fff"/>
+                                    </svg></a>
+                                    </p>
+                                    <img class="useful-section-cloud" src="images/cloud-img.svg" alt="">
+                                    <img class="laptop-img-useful" src="images/laptop-img.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="useful-bottom-title">каталоги производителей</h1>
+                                <p class="useful-bottom-info">Страница с перечнем марок, которые вы можете купить на аукционах Японии и Южной Кореи с помощью нашей компании.</p>
+                            </div>         
+                        </div>
+                    </div>
+                    <div class="swiper usefulSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#!">
+                                    <img src="images/BMW-logo..svg" alt="BMW">
+                                </a> 
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#!">
+                                    <img src="images/volkswagen-logo.svg" alt="volkswagen-logo">
+                                </a> 
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#!">
+                                    <img src="images/kia-logo-svg.svg" alt="KIA">
+                                </a> 
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#!">
+                                    <img src="images/nissan-logo.svg" alt="nissan-logo">
+                                </a> 
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#!">
+                                    <img src="images/NN-car-company-logo.svg" alt="NN-car-company-logo">
+                                </a> 
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#!">
+                                    <img src="images/hyundai-logo.svg" alt="hyundai-logo">
+                                </a> 
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#!">
+                                    <img src="images/mitsubisi-logo.svg" alt="mitsubisi-logo">
+                                </a> 
+                            </div>
+                        </div>
+                        <div class="product-swiper-navigation-box bottom">
+                            <div class="product-swiper-prev-bottom"><img src="images/icons/swiper-navigation-prev.svg" alt="left-arrow"></div>
+                            <div class="product-swiper-next-bottom"><img src="images/icons/swiper-navigation-next.svg" alt="right-arrow"></div>
                         </div>
                     </div>
                 </div>
@@ -481,7 +583,7 @@
             </div>
         </div>
     </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="swiper-offline/swiper.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

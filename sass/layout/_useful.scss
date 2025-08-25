@@ -1,0 +1,90 @@
+.useful-section{
+    margin-bottom: 92px;
+    .useful-top{
+        display: flex;
+        gap: 200px;
+    }
+}
+.online-auctions-box{
+    border: 7px solid #000000;
+    width: 167px;
+    height: 366px;
+    border-width: 7px;
+    display: flex;
+    padding-top: 28px;
+    padding-bottom:58px;
+    padding-left: 40px;
+    padding-right: 52px;
+    span{
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 96%;
+        text-transform: uppercase;
+        color: #D60000;
+    }
+}
+.construction-info.useful{
+    width: 158px;
+    margin: 0;
+}
+.useful-left-top{
+    display: flex;
+    gap: 32px;
+    align-items: start;
+    position: relative;
+}
+.useful-phone-img{
+    position: absolute;
+    top: 263px;
+    left: 89px  ;
+}
+.red-circle-title.useful{
+    padding-top: 158px !important;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 84%;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+.useful-section-cloud{
+    position: absolute;
+    left: 313px;
+    top: -3.5px;
+}
+.show-more-btn.useful{
+    margin: 0;
+    margin-top: 19px;
+}
+.red-circle-info.useful{
+    position: absolute;
+    bottom: 199px;
+    width: 234px;
+    right: 12px;
+}
+.laptop-img-useful{
+    position: absolute;
+    top: 259px;
+    right: 73px;
+}
+.useful-bottom-title{
+    margin-top: 248px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 84%;
+    letter-spacing: -1px;
+    width: 394px ;
+    text-transform: uppercase;
+}
+.useful-bottom-info{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    width: 487px;
+    margin-bottom: 43px;
+}   
+.swiper-button-lock{
+    display: block;
+}
+.product-swiper-navigation-box.bottom{
+    justify-content: center;
+}

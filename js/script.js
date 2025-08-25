@@ -31,6 +31,20 @@ var swiper = new Swiper(".introSwiper ", {
       },
 });
 var swiper = new Swiper(".productSwiper", {
-      slidesPerView: 3,
+      slidesPerView: 2.3,
       spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: ".product-swiper-next",
+        prevEl: ".product-swiper-prev",
+      },
+});
+var swiper = new Swiper(".usefulSwiper", {
+      slidesPerView: 7,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: ".product-swiper-next-bottom",
+        prevEl: ".product-swiper-prev-bottom",
+      },
 });
