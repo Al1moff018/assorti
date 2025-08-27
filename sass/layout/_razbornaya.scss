@@ -95,11 +95,15 @@
     }
 }
 .razbornaya-section{
-    margin-top: 276px;
     margin-left: -19px;
-    padding-block: 90px;
     border: 1px solid #000000;
     background-color: #fff;
+    margin-top: 163px;
+    margin-left: -19px;
+    border: 1px solid #000000;
+    background-color: #fff;
+    padding-top: 45px;
+    padding-bottom:79px;
 }
 .show-more-btn.razbornaya{
     margin-top: 28px;
@@ -110,4 +114,15 @@
 }
 .swiper-slide{
     user-select: none;
+}
+.useful-right{
+    margin-left: -98px;
+    .red-circle{
+        left: -35px;
+        top: -37px;
+    }
+}
+.usefl-left{
+    margin-left: 102px;
+    margin-top: 28px;
 }
