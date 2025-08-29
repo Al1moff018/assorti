@@ -39,6 +39,7 @@ var swiper = new Swiper(".productSwiper", {
         prevEl: ".product-swiper-prev",
       },
 });
+
 var swiper = new Swiper(".usefulSwiper", {
       slidesPerView: 7,
       spaceBetween: 30,
@@ -46,5 +47,14 @@ var swiper = new Swiper(".usefulSwiper", {
       navigation: {
         nextEl: ".product-swiper-next-bottom",
         prevEl: ".product-swiper-prev-bottom",
+      },
+});
+var swiper = new Swiper(".feedbackSwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: ".product-swiper-next-2",
+        prevEl: ".product-swiper-prev-2",
       },
 });

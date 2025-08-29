@@ -32,6 +32,15 @@ body {
   font-family: "Plumb";
 }
 
+.container-1140 {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -180,7 +189,7 @@ button {
   padding-left: 20px;
   border: 7px solid #000000;
   margin-left: 12px;
-  margin-top: 80px;
+  margin-top: 14px;
 }
 .advantages-card.red .card-map-img {
   position: absolute;
@@ -307,6 +316,10 @@ button {
 
 .advantages-card-title-black.card-4 {
   margin-left: 6px;
+}
+
+.advantages-card-box {
+  margin-top: 127px;
 }
 
 .construction-info {
@@ -695,11 +708,9 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Plumb;
   font-weight: 900;
   font-style: Black;
   font-size: 30px;
-  leading-trim: NONE;
   line-height: 84%;
   letter-spacing: -1px;
   text-transform: uppercase;
@@ -794,6 +805,107 @@ button {
 
 .title.customers {
   margin-left: -10px;
+}
+
+.title.white {
+  color: white;
+}
+
+.feedback-section {
+  background: url("../images/info-bg.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  margin-top: 174px;
+  margin-bottom: 70px;
+  height: 281px !important;
+}
+
+.feedback-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #D60000;
+  mix-blend-mode: multiply;
+}
+
+.construction-info.feedback {
+  color: #fff;
+  font-weight: 400;
+  width: 189px;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  margin-top: 28px;
+}
+
+.show-more-btn.useful {
+  color: #fff !important;
+}
+
+.fish-img {
+  position: absolute;
+  top: 82px;
+  left: -21px;
+  z-index: -1;
+}
+
+.feedback-left {
+  position: relative;
+}
+
+.nail-icon {
+  position: absolute;
+  top: 17px;
+  left: 25px;
+}
+
+.feedback-card {
+  position: relative;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2509803922);
+  background-color: #fff;
+  height: 442px;
+  width: 299px;
+}
+
+.feedback-card-info {
+  width: 218px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  padding-top: 76px;
+  padding-left: 42px;
+}
+
+.username {
+  width: 146px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.user-rate-box {
+  display: flex;
+  align-items: center;
+}
+
+.feedback-right {
+  width: 100%;
+  margin-top: 140px;
+  margin-left: 3px;
+}
+
+.container-1140 {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  gap: 52px;
 }
 
 .card-title {
@@ -1676,6 +1788,14 @@ button {
 .show-more-btn.intro {
   margin-left: 59px;
   margin-top: 18px;
+}
+
+.castle-img {
+  width: 158px !important;
+  height: 374px;
+  top: -99px;
+  left: 749px;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
